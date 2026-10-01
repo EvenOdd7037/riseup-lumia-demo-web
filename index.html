@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
+     <!-- ゲームをページ上部から配置し、下の説明へスクロールできるようにする -->
+    <div id="unity-container" class="unity-desktop" style="position:relative; left:auto; top:auto; transform:none; width:960px; margin:24px auto 0;">
       <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -17,14 +18,70 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
+      <!-- フッターの高さを確保し、操作説明との重なりを防ぐ -->
+      <div id="unity-footer" style="height:38px;">
         <div id="unity-logo-title-footer"></div>
-        <!-- ゲームを開いたまま、別タブでクレジットを読めるようにする -->
-        <a href="CREDITS.txt" target="_blank" rel="noopener" style="float:left; margin-left:12px; line-height:38px;">クレジット</a>
+        <!-- このページの下にあるクレジットへ移動する -->
+        <a href="#credits" style="float:left; margin-left:12px; line-height:38px;">クレジット</a>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">RiseUp_Lumia</div>
       </div>
     </div>
+
+    <!-- プレイ画面の下に、操作方法を常時掲載する -->
+    <section aria-labelledby="controls-title" style="box-sizing:border-box; width:960px; margin:20px auto 32px; padding:0 8px; font-family:sans-serif; line-height:1.8;">
+      <h2 id="controls-title" style="margin:0 0 8px; font-size:20px;">【操作方法】</h2>
+      <p style="margin:0;">キーボードまたはゲームパッドで操作します</p>
+      <p style="margin:0;">ゲームパッドの方をおすすめします</p>
+      <p style="margin:0;">メニュー画面：上下でカーソル選択、AボタンまたはZキーで決定</p>
+      <p style="margin:0;">ゲーム画面：左右入力で左右移動、AボタンまたはZキーで上昇、STARTボタンまたはEscキーでPAUSE</p>
+      <p style="margin:8px 0 0; font-size:14px;">※キーボードの方向入力は矢印キーです。ゲームパッドのボタン名はXbox系の表記です。</p>
+    </section>
+
+    <!-- 操作方法の下に、製作者・協力者・素材のクレジットを直接掲載する -->
+    <section id="credits" aria-labelledby="credits-title" style="box-sizing:border-box; width:960px; margin:0 auto 32px; padding:24px 8px 0; border-top:1px solid #ccc; font-family:sans-serif; line-height:1.8;">
+      <h2 id="credits-title" style="margin:0 0 16px; font-size:20px;">【クレジット】</h2>
+
+      <h3>製作者・協力者</h3>
+      <p>製作者：羽黒ジロー(ルミアの工房)<br>Technical Assistant：中村宥継</p>
+
+      <h3>音楽・環境音</h3>
+      <ul>
+        <li>「Feather of the Angel」— FLASH☆BEAT / <a href="https://dova-s.jp/bgm/detail/6854">DOVA-SYNDROME</a></li>
+        <li>「砂浜の波の音」— Hupple / <a href="https://dova-s.jp/se/detail/1337">DOVA-SYNDROME</a></li>
+        <li>「戦闘勝利5」— もみじば / <a href="https://music.storyinvention.com/">もみじばミュージック</a></li>
+      </ul>
+
+      <h3>効果音</h3>
+      <ul>
+        <li>「風切り音（重）」— 稿屋 隆 / <a href="https://dova-s.jp/se/detail/1427">DOVA-SYNDROME</a></li>
+        <li>「警告音 サイレン02-05」— <a href="https://otologic.jp/free/se/warning01.html">OtoLogic</a> / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><br>ゲーム用に加工し、イントロ・ループ用として使用しています。</li>
+        <li>効果音制作ツール：DSP Sci-Fi / DSP Retro — <a href="https://tsugi-studio.com/">Tsugi</a></li>
+      </ul>
+
+      <h3>画像素材</h3>
+      <ul>
+        <li>FREE Platformer Assets — <a href="https://gandalfhardcore.itch.io/">GandalfHardcore</a></li>
+        <li>Industrial Tileset / Industrial Assets Pack — <a href="https://atomicrealm.itch.io/">Atomic Realm</a></li>
+        <li>Multi Platformer Tileset — <a href="https://shackhal.itch.io/multi-platformer-tileset">Shackhal</a> / CC0 1.0 Universal</li>
+        <li>Super Input Prompt Icon Pack — <a href="https://juliocacko.itch.io/free-super-input-prompt-pack-icons-unreal-unity-godot">JulioCacko</a> / CC0 1.0 Universal</li>
+        <li>Laser Sprites（弾画像）— <a href="https://wenrexa.itch.io/">Wenrexa</a></li>
+      </ul>
+
+      <!-- 各フォントの著作権表示・ライセンス全文も読めるようにする -->
+      <h3>使用・同梱フォント</h3>
+      <ul>
+        <li>Archivo Black — The Archivo Black Project Authors / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/Archivo_Black-OFL.txt">ライセンス</a></li>
+        <li>Arimo — The Arimo Project Authors / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/Arimo-OFL.txt">ライセンス</a></li>
+        <li>Chakra Petch — The Chakra Petch Project Authors / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/Chakra_Petch-OFL.txt">ライセンス</a></li>
+        <li>DSEG — keshikan / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/DSEG-OFL.txt">ライセンス</a></li>
+        <li>Liberation Sans — Google Corporation / Red Hat, Inc. / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/LiberationSans-OFL.txt">ライセンス</a></li>
+        <li>M PLUS 1p — The M+ Project Authors / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/M_PLUS_1p-OFL.txt">ライセンス</a></li>
+        <li>Noto Sans JP — Adobe / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/Noto_Sans_JP-OFL.txt">ライセンス</a></li>
+        <li>Orbitron — The Orbitron Project Authors / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/Orbitron-OFL.txt">ライセンス</a></li>
+        <li>PixelMplus — Itou Hiroki / M+ FONTS PROJECT / <a href="StreamingAssets/ThirdPartyLicenses/Fonts/PixelMplus-MPLUS_LICENSE_EN.txt">ライセンス</a></li>
+      </ul>
+    </section>
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
