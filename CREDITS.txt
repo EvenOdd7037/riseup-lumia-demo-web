@@ -1,0 +1,68 @@
+【製作者】
+羽黒ジロー(ルミアの工房)
+
+【協力者】
+Technical Assistant
+中村宥継
+
+【音楽・環境音】
+「Feather of the Angel」
+FLASH☆BEAT / DOVA-SYNDROME
+https://dova-s.jp/bgm/detail/6854
+
+「砂浜の波の音」
+Hupple / DOVA-SYNDROME
+https://dova-s.jp/se/detail/1337
+
+「戦闘勝利5」
+もみじば / もみじばミュージック
+https://music.storyinvention.com/
+
+【効果音】
+「風切り音（重）」
+稿屋 隆 / DOVA-SYNDROME
+https://dova-s.jp/se/detail/1427
+
+「警告音 サイレン02-05」
+OtoLogic
+https://otologic.jp/free/se/warning01.html
+ライセンス：CC BY 4.0
+https://creativecommons.org/licenses/by/4.0/
+ゲーム用に加工し、イントロ・ループ用として使用しています。
+
+効果音制作ツール
+DSP Sci-Fi / DSP Retro — Tsugi
+https://tsugi-studio.com/
+
+【画像素材】
+FREE Platformer Assets — GandalfHardcore
+https://gandalfhardcore.itch.io/
+
+Industrial Tileset / Industrial Assets Pack — Atomic Realm
+https://atomicrealm.itch.io/
+
+Multi Platformer Tileset — Shackhal
+https://shackhal.itch.io/multi-platformer-tileset
+ライセンス：CC0 1.0 Universal
+
+Super Input Prompt Icon Pack — JulioCacko
+https://juliocacko.itch.io/free-super-input-prompt-pack-icons-unreal-unity-godot
+ライセンス：CC0 1.0 Universal
+
+Laser Sprites（弾画像）— Wenrexa
+https://wenrexa.itch.io/
+
+【使用・同梱フォント】
+Archivo Black — The Archivo Black Project Authors
+Arimo — The Arimo Project Authors
+Chakra Petch — The Chakra Petch Project Authors
+DSEG — keshikan
+Liberation Sans — Google Corporation / Red Hat, Inc.
+M PLUS 1p — The M+ Project Authors
+Noto Sans JP — Adobe
+Orbitron — The Orbitron Project Authors
+PixelMplus — Itou Hiroki / M+ FONTS PROJECT
+
+各フォントの著作権表示・ライセンス全文は、
+StreamingAssets/ThirdPartyLicenses/Fonts/
+に同梱しています。
