@@ -37,7 +37,32 @@
       <p style="margin:0;">ゲーム画面：左右入力で左右移動、AボタンまたはZキーで上昇、STARTボタンまたはEscキーでPAUSE</p>
       <p style="margin:8px 0 0; font-size:14px;">※キーボードの方向入力は矢印キーです。ゲームパッドのボタン名はXbox系の表記です。</p>
     </section>
+    <!-- 操作方法の下に、画像付きのゲームルールを掲載する -->
+    <section aria-labelledby="rules-title" style="box-sizing:border-box; width:960px; margin:0 auto 32px; padding:0 8px; font-family:sans-serif; line-height:1.8;">
+      <h2 id="rules-title" style="margin:0 0 8px; font-size:20px;">【ルール】</h2>
 
+      <!-- ゴール画像を、文章の途中に文字と並べて表示する -->
+      <p style="margin:0 0 8px;">
+        はるか上にある、
+        <img src="images/GoalObject.png" alt="ゴール" width="32" height="32" style="vertical-align:middle; image-rendering:pixelated;">
+        を目指して上に登りましょう！
+      </p>
+
+      <!-- 星アイテムの画像を使い、得点と残機について説明する -->
+      <p style="margin:0 0 8px;">
+        大中小さまざまな
+        <img src="images/star_item.png" alt="星アイテム" width="32" height="32" style="vertical-align:middle; image-rendering:pixelated;">
+        をとると得点ゲット！(本番では一定得点ごとに残機が増えます)
+      </p>
+
+      <!-- ダメージを受ける障害物について説明する -->
+      <p style="margin:0;">
+        その他針や光っている弾みたいな、痛そうなものに当たるとダメージを受けてしまいますので、避けましょう。
+      </p>
+      <p style="margin:0;">
+        ダメージを受けすぎてHPが0になる、または時間切れで残機が減ります。残機が0になるとゲームオーバーです。
+      </p>
+    </section>
     <!-- 操作方法の下に、製作者・協力者・素材のクレジットを直接掲載する -->
     <section id="credits" aria-labelledby="credits-title" style="box-sizing:border-box; width:960px; margin:0 auto 32px; padding:24px 8px 0; border-top:1px solid #ccc; font-family:sans-serif; line-height:1.8;">
       <h2 id="credits-title" style="margin:0 0 16px; font-size:20px;">【クレジット】</h2>
